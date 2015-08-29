@@ -1,7 +1,7 @@
 
 GCMnotifier
 ============
-PHP framework for sending push notifications to mobile devices using GCM XMPP protocol (CCS)
+PHP framework for sending GCM push notifications to Android mobile devices using XMPP protocol (CCS)
 
 Usage
 -----
@@ -16,7 +16,7 @@ The example
 -----------
 One can start the example service from the shell:
 
-	`php examples/service.php`
+	php examples/service.php
 
 (You may need to prefix "php" with the full path of the executable.)
 
@@ -34,6 +34,6 @@ Just connect to the service and type in the JSON packets you want to send as not
 More comfortable would be to try the client example that is provided.
 It has a simple HTML interface, and it's meant to be started in your browser:
 
-	`http://localhost/GCMnotifier/examples/client.php`
+	http://localhost/GCMnotifier/examples/client.php
 
 (This assumes you have a web server running locally and the examples located in the path shown.)
