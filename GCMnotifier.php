@@ -1,6 +1,9 @@
 <?php
 /**
- * GCMnotifier
+ * GCMnotifier The class that contains both client and service functions.
+ * It will connect to Cloud Connection Servers and keep the connection and its XMPP session open.
+ *
+ * @package GCMnotifier
  */
 
 class GCMnotifier

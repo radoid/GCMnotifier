@@ -5,13 +5,13 @@
  *
  * Replace sender_id and api_key below with your official credentials obtained from Google's Developer Console.
  *
- * @package XMPPnotifier
+ * @package GCMnotifier
  */
-require __DIR__."/../XMPPnotifier.php";
+require __DIR__."/../GCMnotifier.php";
 
-$xmpp = new GCMnotifier([
-		'sender_id' => '248099740444',
-		'api_key' => 'AIzaSyCW7x0JBFdnLc6P6vuGPdezM54T6-9jT9g',
+$service = new GCMnotifier([
+		'sender_id' => '000000000000',
+		'api_key' => 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
 
 		'onSend' => function ($message_id) {
 			echo "Sent message #$message_id successfully.\n";
@@ -29,5 +29,5 @@ $xmpp = new GCMnotifier([
 		},
 	]);
 
-$xmpp->listen()
+$service->listen()
 	or die("Cannot start service.\n");
